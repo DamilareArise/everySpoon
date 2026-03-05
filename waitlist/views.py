@@ -10,7 +10,7 @@ class WaitlistEntryViewSet(viewsets.ModelViewSet):
     serializer_class = WaitlistEntrySerializer
     pagination_class = CustomPagination
     filter_backends = [filters.OrderingFilter, filters.SearchFilter]
-    search_fields = ['email', 'first_name', 'last_name']
+    search_fields = ['email', 'name']
     ordering_fields = ['timestamp']
     
     
