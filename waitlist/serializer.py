@@ -10,6 +10,7 @@ class WaitlistEntrySerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("This email is already on the waitlist.")
         return attrs
     
+    
     class Meta:
         model = WaitlistEntry
         fields = '__all__'
